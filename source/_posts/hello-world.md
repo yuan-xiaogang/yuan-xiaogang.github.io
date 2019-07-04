@@ -1,11 +1,11 @@
 ---
-title: Hello World
+title: 初使用hexo
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
 
 ### Create a new post
+
+创建新的文章
 
 ``` bash
 $ hexo new "My New Post"
@@ -13,7 +13,13 @@ $ hexo new "My New Post"
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
+
+<!--more-->
+
+
 ### Run server
+
+启动服务器
 
 ``` bash
 $ hexo server
@@ -23,6 +29,8 @@ More info: [Server](https://hexo.io/docs/server.html)
 
 ### Generate static files
 
+打包
+
 ``` bash
 $ hexo generate
 ```
@@ -30,6 +38,8 @@ $ hexo generate
 More info: [Generating](https://hexo.io/docs/generating.html)
 
 ### Deploy to remote sites
+
+发布
 
 ``` bash
 $ hexo deploy
