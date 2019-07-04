@@ -12,7 +12,7 @@ npm i gulp -g
 
 新建项目文件，在根目录下创建gulpfile.js文件
 
-> 提前定义了几个变量，方面更改文件路劲
+> 提前定义了几个变量，方面更改文件路径
 ```
 const proSrc = 'src'; // 项目文件夹
 const outSrc = 'dist' // 输出code
