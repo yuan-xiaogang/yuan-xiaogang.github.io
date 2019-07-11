@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="frank的博客">
 <meta property="og:description" content="常见的浏览器   浏览器 内核 备注    ie trident    edge Gecko    google blink（webkit的分支）    safari webkit    opera blink    移动端的内核大部分使用的是webkit内核； web标准结构(html)、表现(css)、行为(js)">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-10T10:27:48.597Z">
+<meta property="og:updated_time" content="2019-07-11T08:35:21.346Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="重学前端 第1天">
 <meta name="twitter:description" content="常见的浏览器   浏览器 内核 备注    ie trident    edge Gecko    google blink（webkit的分支）    safari webkit    opera blink    移动端的内核大部分使用的是webkit内核； web标准结构(html)、表现(css)、行为(js)">
@@ -247,9 +247,44 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">    &lt;thead&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;th&gt;周一&lt;/th&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &lt;/thead&gt;</span><br><span class="line">    &lt;tbody&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;周一&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &lt;/tbody&gt;</span><br><span class="line">    &lt;tfoot&gt;</span><br><span class="line">        &lt;tr&gt;</span><br><span class="line">            &lt;td&gt;周一&lt;/td&gt;</span><br><span class="line">        &lt;/tr&gt;</span><br><span class="line">    &lt;/tfoot&gt;   </span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
 
 <h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
-<li>无序列表 ul li</li>
-<li>有序列表 ol li</li>
-<li>自定义列表<h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3></li>
+<li><p>无序列表 ul li<br>ul里只能包含li</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>有序列表 ol li</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自定义列表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dl&gt;</span><br><span class="line">    &lt;dt&gt;北京&lt;/dt&gt;</span><br><span class="line">    &lt;dd&gt;昌平区&lt;/dd&gt;</span><br><span class="line">    &lt;dd&gt;东城区&lt;/dd&gt;</span><br><span class="line">&lt;/dl&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h3><h4 id="input控件"><a href="#input控件" class="headerlink" title="input控件"></a>input控件</h4><p><code>&lt;input type=&quot;text&quot; /&gt;</code><br>type 属性</p>
+<ul>
+<li>text 文本输入框</li>
+<li>password 密码框</li>
+<li>radio 单选按钮</li>
+<li>checkbox 多选按钮</li>
+<li>button 普通按钮</li>
+<li>submit 提交按钮</li>
+<li>reset 重置按钮</li>
+<li>image 图片提交按钮 必须包含src属性</li>
+<li>file 文本域</li>
+</ul>
+<p>value 值 显示表单的值</p>
+<p>name 属性 区别表单控件</p>
+<p>checked 属性 表示默认选中状态</p>
+<h4 id="label标签"><a href="#label标签" class="headerlink" title="label标签"></a>label标签</h4><p>1、直接包含表单</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;label&gt;</span><br><span class="line">        用户名</span><br><span class="line">            &lt;input type=&quot;text&quot; /&gt;</span><br><span class="line">&lt;/label&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2、使用for=”id”来控制光标</p>
+<h4 id="文本域-textarea"><a href="#文本域-textarea" class="headerlink" title="文本域 textarea"></a>文本域 textarea</h4><p>cols、rows属性，不过实际开发中不使用，使用css来控制</p>
+<h4 id="下拉列表"><a href="#下拉列表" class="headerlink" title="下拉列表"></a>下拉列表</h4><p>一般不会再开发中使用；由于在各个浏览器中表现的形式不同，很难修改其样式，会使用其他元素去模拟下拉列表</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;select&gt;</span><br><span class="line">        &lt;option&gt;1&lt;/option&gt;</span><br><span class="line">        &lt;option&gt;2&lt;/option&gt;</span><br><span class="line">&lt;/select&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="表单域-form"><a href="#表单域-form" class="headerlink" title="表单域 form"></a>表单域 form</h4><ul>
+<li>action 属性 提交后端的url地址；</li>
+<li>method 方式， get/post</li>
+<li>name 区别不同的表单域</li>
 </ul>
 
       
