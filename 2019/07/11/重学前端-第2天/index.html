@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="frank的博客">
 <meta property="og:description" content="css可以美化我们的网页；设置版面布局和样式 css样式表 引入css样式的3种方式  1、行内式 写在标签内部的;开发中偶尔使用  &amp;lt;div style=&amp;quot;color: pink; font-size: 14px;&amp;quot;&amp;gt;行内式&amp;lt;/div&amp;gt;  2、内部样式表   123456789101112&amp;lt;head&amp;gt;    &amp;lt;meta charset">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-12T08:56:53.143Z">
+<meta property="og:updated_time" content="2019-07-12T10:25:37.873Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="重学前端-第2天">
 <meta name="twitter:description" content="css可以美化我们的网页；设置版面布局和样式 css样式表 引入css样式的3种方式  1、行内式 写在标签内部的;开发中偶尔使用  &amp;lt;div style=&amp;quot;color: pink; font-size: 14px;&amp;quot;&amp;gt;行内式&amp;lt;/div&amp;gt;  2、内部样式表   123456789101112&amp;lt;head&amp;gt;    &amp;lt;meta charset">
@@ -193,8 +193,14 @@
 <li>font-style: 字体风格（倾斜） normal, italic 倾斜</li>
 </ul>
 <p>综合写法：<code>font: italic 700 20px &#39;微软雅黑&#39;;</code> <code>font: font-style font-weight font-size font-family;</code><br>一定不能省略font-size和font-family，顺序不能更改</p>
-<h3 id="css外观属性"><a href="#css外观属性" class="headerlink" title="css外观属性"></a>css外观属性</h3><p>color：文本颜色<br>    预定颜色值、16进制颜色值、rgb代码<br>line-height：行间距 一般比字号大7、8像素<br>text-align：文本水平对齐方式 center left right<br>text-indent：首行缩进，一般使用2em<br>text-decoration： 文本装饰 none 、underline（文本下的线） 、overline（上划线）、 line-through（贯穿线）</p>
-<h3 id="标签的显示模式"><a href="#标签的显示模式" class="headerlink" title="标签的显示模式"></a>标签的显示模式</h3><p>1、行内元素 <code>display: inline;</code><br>2、 行内块元素 <code>display: inline-block;</code><br>3、块级元素 <code>display: block;</code><br>    常见的块级元素： h1-h6 div ul ol li p；<br>    注意点： p里面最好不要放置div</p>
+<h3 id="css外观属性"><a href="#css外观属性" class="headerlink" title="css外观属性"></a>css外观属性</h3><p>color：文本颜色<br>    预定颜色值、16进制颜色值、rgb代码<br>line-height：行间距 一般比字号大7、8像素<br>    一行文字由4条线组成： 顶线，中线，基线，底线；基线与基线之间的距离称为行高；<br>    行高 = 上距离+文字+下距离<br>    行高=高度 垂直居中； 行高&gt;高度 文字偏下； 行高&lt;高度 文字偏上<br>text-align：文本水平对齐方式 center left right<br>text-indent：首行缩进，一般使用2em<br>text-decoration： 文本装饰 none 、underline（文本下的线） 、overline（上划线）、 line-through（贯穿线）</p>
+<h3 id="标签的显示模式"><a href="#标签的显示模式" class="headerlink" title="标签的显示模式"></a>标签的显示模式</h3><p>1、行内元素 <code>display: inline;</code><br>    常见的行内元素： a span b strong i em del s ins u；<br>    注意点：高宽设置无效；span内最好不要放div；a标签内最好不放a标签；<br>2、行内块元素 <code>display: inline-block;</code><br>    常见的行内块元素： img td input；<br>    注意点：行内块元素之间会有一个间距；<br>3、块级元素 <code>display: block;</code><br>    常见的块级元素： h1-h6 div ul ol li p；<br>    注意点： p里面最好不要放置div；</p>
+<h3 id="css背景"><a href="#css背景" class="headerlink" title="css背景"></a>css背景</h3><ul>
+<li>background-color 背景颜色 默认颜色 transparent</li>
+<li>background-image 背景图片</li>
+<li>background-repeat 图片平铺 no-repeat repeat-x repeat-y ； 默认repeat</li>
+<li>background-position 背景位置 （x轴坐标， y轴坐标） 参数：length 或者 position</li>
+</ul>
 
       
 
