@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="frank的博客">
 <meta property="og:description" content="目标：  css3新增选择器 2d转换 动画 3d转换 私有前缀">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-24T09:12:44.162Z">
+<meta property="og:updated_time" content="2019-07-25T01:39:01.592Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="重学前端-第5天">
 <meta name="twitter:description" content="目标：  css3新增选择器 2d转换 动画 3d转换 私有前缀">
@@ -207,7 +207,7 @@
 <p>例子：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">            perspective: 1000px;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        @keyframes move &#123;</span><br><span class="line">            50% &#123;</span><br><span class="line">                transform: rotateY(180deg);</span><br><span class="line">            &#125;</span><br><span class="line">            100% &#123;</span><br><span class="line">                transform: rotateY(360deg);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        .out &#123;</span><br><span class="line">            width: 200px;</span><br><span class="line">            height: 200px;</span><br><span class="line">            position: relative;</span><br><span class="line">            margin: 300px auto;</span><br><span class="line">            transition: all 1s;</span><br><span class="line">            transform-style: preserve-3d;</span><br><span class="line">            animation: move 2s linear infinite forwards;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        .out:hover &#123;</span><br><span class="line">            /* transform: rotateY(180deg); */</span><br><span class="line">            animation-play-state: paused;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        .zheng,</span><br><span class="line">        .fan &#123;</span><br><span class="line">            position: absolute;</span><br><span class="line">            width: 100%;</span><br><span class="line">            height: 100%;</span><br><span class="line">            font-size: 30px;</span><br><span class="line">            font-weight: 900;</span><br><span class="line">            text-align: center;</span><br><span class="line">            line-height: 200px;</span><br><span class="line">            border-radius: 50%;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        .zheng &#123;</span><br><span class="line">            background: pink;</span><br><span class="line">            z-index: 3;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        .fan &#123;</span><br><span class="line">            background: #ddd;</span><br><span class="line">            transform: rotateY(180deg);</span><br><span class="line">            z-index: 2;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="私有前缀"><a href="#私有前缀" class="headerlink" title="私有前缀"></a>私有前缀</h3><p>兼容老版本的浏览器</p>
+<h3 id="私有前缀"><a href="#私有前缀" class="headerlink" title="私有前缀"></a>私有前缀</h3><p>兼容老版本的浏览器；<br><code>-moz-</code> 兼容火狐<br><code>-ms-</code> 兼容ie<br><code>-webkit-</code> 兼容safari 、chrome<br><code>-o-</code> 兼容Opera </p>
 
       
 
@@ -316,6 +316,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/07/24/重学前端-第6天/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          重学前端-第6天
+        
+      </div>
+    </a>
   
   
     <a href="/2019/07/20/重学前端-第4天/" id="article-nav-older" class="article-nav-link-wrap">
