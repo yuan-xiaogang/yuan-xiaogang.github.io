@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/7 | frank的博客</title>
+  <title>重学前端-第8天 | frank的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="frank的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/07/page/2/index.html">
+  <meta name="description" content="目标：  变量 数据类型 操作符 流程控制 循环 数组 函数 作用域和预解析 对象 内置对象 简单类型和复杂类型">
+<meta name="keywords" content="javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重学前端-第8天">
+<meta property="og:url" content="http://yoursite.com/2019/07/26/重学前端-第8天/index.html">
 <meta property="og:site_name" content="frank的博客">
+<meta property="og:description" content="目标：  变量 数据类型 操作符 流程控制 循环 数组 函数 作用域和预解析 对象 内置对象 简单类型和复杂类型">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-26T10:28:16.058Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="frank的博客">
+<meta name="twitter:title" content="重学前端-第8天">
+<meta name="twitter:description" content="目标：  变量 数据类型 操作符 流程控制 循环 数组 函数 作用域和预解析 对象 内置对象 简单类型和复杂类型">
   
   
     <link rel="icon" href="/favicon.png">
@@ -122,79 +127,195 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-重学前端-第8天" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/04/gulp/" class="archive-article-date">
-  	<time datetime="2019-07-04T03:23:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-04</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/04/gulp/">gulp 搭建自己的工作流</a>
+    <h1 class="article-title" itemprop="name">
+      重学前端-第8天
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/03/hello/" class="archive-article-date">
-  	<time datetime="2019-07-03T06:06:55.236Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-03</time>
+        
+        <a href="/2019/07/26/重学前端-第8天/" class="archive-article-date">
+  	<time datetime="2019-07-26T07:03:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/03/hello/">初使用hexo</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>目标：</p>
+<ul>
+<li>变量</li>
+<li>数据类型</li>
+<li>操作符</li>
+<li>流程控制</li>
+<li>循环</li>
+<li>数组</li>
+<li>函数</li>
+<li>作用域和预解析</li>
+<li>对象</li>
+<li>内置对象</li>
+<li>简单类型和复杂类型</li>
+</ul>
+<a id="more"></a>
+<p>运行在客户端的脚本语言，不需要编译，js解释器会逐行解释并执行；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alert(&apos;123&apos;);</span><br><span class="line">prompt(&apos;please say&apos;);</span><br><span class="line">conlog.log(&apos;123&apos;);</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>变量是程序在内存中申请的一块存放数据的空间；<br><code>var age = 18;</code> 变量初始化<br><code>var age = 18, name= &#39;yuan&#39;;</code><br>变量命名：字母、数字、下划线、$ 组成的，不能以数字开头，不能使用关键字，驼峰命名法；</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><ul>
+<li>number</li>
+<li>string</li>
+<li>null</li>
+<li>undefined</li>
+</ul>
+<h3 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h3><h3 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h3><h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="作用域和预解析"><a href="#作用域和预解析" class="headerlink" title="作用域和预解析"></a>作用域和预解析</h3><h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><h3 id="内置对象"><a href="#内置对象" class="headerlink" title="内置对象"></a>内置对象</h3><h3 id="简单类型和复杂类型"><a href="#简单类型和复杂类型" class="headerlink" title="简单类型和复杂类型"></a>简单类型和复杂类型</h3>
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/26/重学前端-第8天/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/07/26/vscode插件/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vscode插件</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2019/07/">&laquo; Prev</a><a class="page-number" href="/archives/2019/07/">1</a><span class="page-number current">2</span>
-    </nav>
+  
+
+  
+
   
 
 
@@ -219,8 +340,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
